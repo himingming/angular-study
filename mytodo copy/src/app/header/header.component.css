@@ -1,0 +1,21 @@
+.layout {
+  background-color: #f9dec9;
+  padding: 46px 26px 26px 16px;
+}
+
+.layout h1,
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.layout h1 {
+  margin-bottom: 16px;
+  font-weight: bolder;
+  color: rgb(64, 63, 63);
+}
+
+.layout h2 {
+  font-size: 20px;
+  color: rgb(174, 172, 172);
+}

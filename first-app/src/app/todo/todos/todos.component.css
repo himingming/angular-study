@@ -1,0 +1,16 @@
+app-todo,
+app-add-todo {
+  display: inline-block;
+}
+div {
+  border-bottom: 1px solid #cccccc;
+  background-color: white;
+}
+button {
+  border: none;
+  background-color: white;
+}
+
+input:checked:after {
+  color: darkgray;
+}

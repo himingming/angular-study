@@ -1,0 +1,44 @@
+app-todo,
+app-add-todo {
+  display: inline-block;
+}
+div {
+  border-bottom: 1px solid #cccccc;
+  background-color: white;
+}
+button {
+  border: none;
+  background-color: white;
+}
+
+input:checked:after {
+  color: darkgray;
+}
+.todo-list {
+  width: 500px;
+  max-width: 100%;
+  border: solid 1px #ccc;
+  min-height: 60px;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.btns {
+  float: right;
+  background-color: #f9dec9;
+  border: none;
+}
+.btns > button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f9dec9;
+  border-radius: 5px;
+  border: none;
+  color: rgba(0, 0, 0, 0.609);
+  cursor: pointer;
+}
+
+.btns > button:hover {
+  background-color: #ccc;
+}

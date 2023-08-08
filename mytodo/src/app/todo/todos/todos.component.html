@@ -1,0 +1,23 @@
+<div class="all-list">
+  <ng-container *ngIf="doneTodos; else allList">
+    <div *ngFor="let todo of getDoneTodos()">
+      <app-list-todo [todo]="todo"></app-list-todo>
+    </div>
+  </ng-container>
+  <ng-template #allList>
+    <div *ngFor="let todo of todos; let i = index">
+      <div (click)="toggleTodo(todo)">
+        <app-list-todo [todo]="todo"></app-list-todo>
+        <button (click)="delTodo(i)">🗑️</button>
+      </div>
+    </div>
+  </ng-template>
+</div>
+<div>
+  <app-add-todo class="addBtn" (onTodoAdded)="addTodo($event)"></app-add-todo>
+</div>
+<div class="btns">
+  <button class="done-btn" (click)="doneBtn()">done</button>
+  <button class="back-btn" (click)="backBtn()">back</button>
+  <button class="refresh-btn" (click)="refresh()">refresh</button>
+</div>

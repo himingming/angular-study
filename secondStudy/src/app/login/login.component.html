@@ -1,0 +1,11 @@
+<div>Wellcome</div>
+<input type="text" placeholder="id" [formControl]="id" />
+<input type="password" placeholder="pwd" [formControl]="pwd" />
+<button (click)="tryToLogin()">Login</button>
+<div>
+  <!--hasError : 앵귤러에서 정의된 값을 대입해 유효성 검사여부 확인-->
+  <span *ngIf="pwd.hasError('minLength') || pwd.hasError('required')"
+    >비밀번호는 4자리 이상이어야 합니다.</span
+  >
+</div>
+<div *ngIf="getMessage" [ngClass]="styleArray"></div>

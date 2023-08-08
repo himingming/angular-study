@@ -1,0 +1,9 @@
+<div *ngFor="let todo of todos; let i = index">
+  <div (click)="toggleTodo(todo)">
+    <app-todo [todo]="todo"></app-todo>
+    <button (click)="delTodo(i)">🗑️</button>
+  </div>
+</div>
+<div>
+  <app-add-todo (onTodoAdded)="addTodo($event)"></app-add-todo>
+</div>
